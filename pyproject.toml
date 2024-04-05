@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "hndvisual"
+version = "0.1.0"
+description = "A simple python client for HND visual earpicks"
+authors = ["pajowu <git@ca.pajowu.de>"]
+license = "GPLv3+"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pillow = "^10.3.0"
+opencv-python = { version = "^4.9.0.80", optional = true }
+numpy = { version = "^1.26.4", optional = true }
+
+[tool.poetry.extras]
+examples = ["opencv-python", "numpy"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
